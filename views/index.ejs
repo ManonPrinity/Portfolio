@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Manon Noblet</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+	</head>
+	<body>
+		<header id="main_header">
+			<h1>Manon Noblet</h1>
+			<p class="slogan">Developpeur web Junior</p>
+			<div></div>
+			<a href="cv.pdf">
+				<span class="icon"></span>
+				<span class="content">Mon CV a telecharger ici</span>
+			</a>
+			<p class="presentation">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sem varius dui lacinia faucibus. Nulla pellentesque elementum laoreet. Suspendisse tempor fermentum odio, quis blandit tortor pretium sed. Aenean dapibus diam mauris, sit amet laoreet neque accumsan non. Mauris sed vestibulum leo.
+			</p>
+		</header>
+
+		<nav id="main_nav">
+			<a href="#skills_section">Competances</a>
+			<a href="#projects_section">Projets</a>
+			<a href="#contact_section">Contact</a>
+		</nav>
+
+		<section id="skills_section">
+			<h2>Competances</h2>
+			<p id="skill_precision">Survolez mes competances pour plus d'informations</p>
+			<div onmouseleave="hide_skill();">
+				<img onmouseover="display_skill('html5');" src="img/skills/html5.png" alt="html5">
+				<img onmouseover="display_skill('css3');" src="img/skills/css3.png" alt="css3">
+				<img onmouseover="display_skill('javascript');" src="img/skills/javascript.png" alt="javascript">
+				<img onmouseover="display_skill('angular');" src="img/skills/angular.png" alt="angular">
+				<img onmouseover="display_skill('nodejs');" src="img/skills/nodejs.png" alt="nodejs">
+				<img onmouseover="display_skill('mongodb');" src="img/skills/mongodb.png" alt="mongodb">
+				<img onmouseover="display_skill('php');" src="img/skills/php.png" alt="php">
+				<img onmouseover="display_skill('photoshop');" src="img/skills/photoshop.png" alt="photoshop">
+			</div>
+		</section>
+
+		<section id="projects_section">
+			<h2>Projets</h2>
+			<div class="project">
+				<img src="img/skills/javascript.png" alt="javascript">
+				<div>
+					<p class="title">Titre du projet</p>
+					<p class="technos">Stack MEAN</p>
+					<p class="description">Description du projet</p>
+				</div>
+				<a href="#">Voir</a>
+			</div>
+
+			<div class="project">
+				<img src="img/skills/angular.png" alt="javascript">
+				<div>
+					<p class="title">Titre du projet numero 2</p>
+					<p class="technos">Stack PAUL</p>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sem varius dui lacinia faucibus. Nulla pellentesque elementum laoreet. Suspendisse tempor fermentum odio, quis blandit tortor pretium sed. Aenean dapibus diam mauris, sit amet laoreet neque accumsan non. Mauris sed vestibulum leo.</p>
+				</div>
+				<a href="#">Voir</a>
+			</div>
+		</section>
+
+		<section id="contact_section">
+			<h2>Contact</h2>
+			<form action="mail">
+				<input type="text" name="name" placeholder="nom">
+				<input type="email" name="email" placeholder="email">
+				<textarea name="content" height="500" placeholder="message"></textarea>
+				<input type="submit" value="Envoyer">
+				<input type="reset" value="Reset">
+			</form>
+		</section>
+
+		<footer id="main_footer">
+			<p class="follow">Retrouvez moi sur :</p>
+			<div>
+				<a href="#"><img src="img/social/github.svg"></a>
+				<a href="#"><img src="img/social/linkedin.svg"></a>
+				<a href="#"><img src="img/social/google.svg"></a>
+				<a href="#"><img src="img/social/facebook.svg"></a>
+			</div>
+			<p class="sign">Manon Noblet</p>
+		</footer>
+
+		<!-- <script src="/socket.io/socket.io.js"></script> -->
+		<script type="text/javascript" src="scripts/index.js"></script>
+	</body>
+</html>
